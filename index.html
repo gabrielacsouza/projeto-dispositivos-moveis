@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/queries.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <!-- Importação do Gallery css-->   
+    <link rel="stylesheet" href="css/gallery.theme.css">
+    <link rel="stylesheet" href="css/gallery.min.css">
+
+    <title>Pétalas & Cores</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="mobile-nav-icon js--nav-icon">
+                <ion-icon name="menu-outline" class="ion-nav-icon"></ion-icon>
+            </a>
+            <ul class="main-nav">
+                <li>
+                    <a href="#events">Eventos</a>
+                </li>
+                <li>
+                    <a href="#photoshoot">Ensaios Fotográficos</a>
+                </li>
+                <li>
+                    <a href="#professionals">Profissionais</a>
+                </li>
+                <li>
+                    <a href="#comments">Depoimentos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+            
+        </nav>
+        <div class="banner">
+            <h1>Pétalas & Cores</h1>
+            <h2>Design Floral</h2>
+        </div>
+    </header>
+    <section id="events" class="events">
+        <!-- número de itens é a quantidade de slides/imagens-->
+        <!-- autoplay: os slides/imagens mudam automaticamente-->
+        <h2>Eventos</h2>
+        <div class="events_part1">
+            <div class="events_description">               
+                <p>Flores remetem momentos especiais. Você já pensou na importância das flores em uma decoração? Cheias de beleza, cores e significados, as plantas são peças obrigatórias na arte de decorar festas. Colorimos seus sonhos com as mais lindas e perfeitas combinações de flores.   </p>
+            </div>
+            <div class="awards">
+                <h3>Reconhecimento</h3>
+                <figure class="img_awards">
+                    <img src="img/awards_2021.png" alt="Prêmio melhores casamentos 2021">
+                    <img src="img/awards_2022.jpeg" alt="Prêmio melhores casamentos 2022">
+                </figure>
+            </div>
+        </div>     
+        <div class="gallery autoplay items-5"> 
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+            <div id="item-4" class="control-operator"></div>
+            <div id="item-5" class="control-operator"></div>
+
+            <!-- chamada das imgens de cada item-->
+            <figure class="item">
+                <h1><img src="img/festa01.jpg" alt="Decoração com flores cor de laranja."></h1>
+            </figure>
+            <figure class="item">
+                <h1><img src="img/festa02.jpg" alt="Decoração com flores cor de rosa."></h1>
+            </figure>
+            <figure class="item">
+                <h1><img src="img/festa03.jpg" alt="Decoração com rosas e folhas verdes."></h1>
+            </figure>
+            <figure class="item">
+                <h1><img src="img/festa04.jpg" alt="Decoração com flores da cor branca."></h1>
+            </figure>
+            <figure class="item">
+                <h1><img src="img/noiva.jpg" alt="Noiva em sua festa com decoração de flores tropicais."></h1>
+            </figure>
+
+            <!-- tirei as "bolinhas"<a>.</a> de controle das imagens pq não quero que o usuário selecione-->
+        </div>                     
+    </section>
+    <section id="photoshoot" class="photoshoot">
+        <div class="photoshoot_description">
+            <h2>Ensaios Fotográficos</h2>
+            <p>Cada tipo de fotografia demanda uma gama específica de conhecimento, técnica e prática. Nossos profissionais estão preparados para proporcionar a melhor experiênicia nos mais diversos tipos de ambientes: externos, internos, festas, luz da manhã, entardecer, noite.<br> As fotografias reveram muito mais do que a beleza, revelam sentimentos e desejos. Revele-se também. </p>
+        </div>
+        <ul class="images-showcase clearfix">
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/flores_lilas.jpg">
+                        <source media="(max-width:900px)" srcset="img/flores_lilas_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/flores_lilas_peq.jpg">
+                        <img src="img/flores_lilas.jpg" alt="Mulher com flores da cor lilás.">
+                    </picture>
+                </figure>             
+            </li>
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/homem_flores.jpg">
+                        <source media="(max-width:900px)" srcset="img/homem_flores_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/homem_flores_peq.jpg">
+                        <img src="img/homem_flores.jpg" alt="Homem com flores.">
+                    </picture>
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/bebezinho.jpg">
+                        <source media="(max-width:900px)" srcset="img/bebezinho_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/bebezinho_peq.jpg">
+                        <img src="img/bebezinho.jpg" alt="Aniversário de um ano.">
+                    </picture>
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/idoso.jpg">
+                        <source media="(max-width:900px)" srcset="img/idoso_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/idoso_peq.jpg">
+                        <img src="img/idoso.jpg" alt="Homem idoso com flores.">
+                    </picture>
+                </figure>
+            </li>           
+        </ul>
+        <ul class="images-showcase clearfix">
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/menina_perna.jpg">
+                        <source media="(max-width:900px)" srcset="img/menina_perna_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/menina_perna_peq.jpg">
+                        <img src="img/menina_perna.jpg" alt="Mulher com perna mecânica entre as plantas.">
+                    </picture>
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/noiva-estrada.jpg">
+                        <source media="(max-width:900px)" srcset="img/noiva-estrada_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/noiva-estrada_peq.jpg">
+                        <img src="img/noiva-estrada.jpg" alt="Noiva em uma estrada.">
+                    </picture>
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/menina-flores.jpg">
+                        <source media="(max-width:900px)" srcset="img/menina-flores_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/menina-flores_peq.jpg">
+                        <img src="img/menina-flores.jpg" alt="Mulher com flores.">
+                    </picture>
+                </figure>
+            </li>
+            <li>
+                <figure class="photo">
+                    <picture>
+                        <source media="(max-width:610px)" srcset="img/idosa.jpg">
+                        <source media="(max-width:900px)" srcset="img/idosa_med.jpg">
+                        <source media="(max-width:1600px)" srcset="img/idosa_peq.jpg">
+                        <img src="img/idosa.jpg" alt="Mulher idosa com flores.">
+                    </picture>    
+                </figure>               
+            </li>
+        </ul>
+    </section>
+    <section id="professionals" class="professionals">
+        <h2>Profissionais</h2>
+        <div class="info-professionals">
+            <div class="personal-info">
+                <figure>
+                    <picture>
+                        <source media="(max-width:1600px)" srcset="img/fotografo_leonardo_peq.jpg">
+                        <img src="img/fotografo_leonardo.jpg" alt="Fotógrago Leonardo">
+                    </picture>
+                </figure>
+                <h3>Fotógrafo</h3>
+                <p>Leonardo Oliveira</p>
+                <div class="prof-info">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <span>@leofotosoficial</span>
+                </div>  
+                 <div class="prof-info">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span>@leofotosoficial</span>
+                </div>
+            </div>
+            <div class="personal-info">
+                <figure>
+                    <picture>
+                        <source media="(max-width:1600px)" srcset="img/designer_debora.jpg">
+                        <img src="img/designer_debora.jpg" alt="designer de mesas Débora">
+                    </picture>
+                </figure>
+                <h3>Designer de Mesas</h3>
+                <p>Débora Souza</p>
+                <div class="prof-info">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <span>@debmesassoficial</span>
+                </div>  
+                 <div class="prof-info">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span>@debmesasoficial</span>
+                </div>
+            </div>
+            <div class="personal-info">
+                <figure>
+                    <picture>
+                        <source media="(max-width:1600px)" srcset="img/florista_davi_peq.jpg">
+                        <img src="img/florista_davi.jpg" alt="Designer de Flores Davi">
+                    </picture>
+                </figure>    
+                <h3>Designer de Flores</h3>
+                <p>Davi Ramos</p>
+                <div class="city-info">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <span>@davidesignflores</span>
+                </div>  
+                 <div class="city-info">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span>@davidesignflores</span>
+                </div>
+            </div>
+            <div class="personal-info">
+                <figure>
+                    <picture>
+                        <source media="(max-width:1600px)" srcset="img/florista_julia_peq.jpg">
+                        <img src="img/florista_julia.jpg" alt="Designer de flores Júlia">
+                    </picture>
+                </figure>
+                <h3>Designer de Flores</h3>
+                <p>Júlia Lee</p>
+                <div class="city-info">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <span>@julinhaflores</span>
+                </div>  
+                 <div class="city-info">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <span>@julinhaflores</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="comments" class="comments">
+        <h2>Depoimentos</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Quando contratamos os serviços da Pétalas & Cores para decoração do nosso casamento, foi pela quantidade de recomendações e elogios que nós vimos. Agora entendo o de tantos elogios, eu fiquei simplesmente impressionada com tamanha qualidade, profissionalismo deles. Só temos a agradecer, vocês fizeram o nosso sonho se tornar realidade, e uma realidade maravilhosa!
+                    <cite>
+                    Aline Barros Trindade 
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Desde o primeiro contato com a Débora fomos super bem atendidos, todas as dúvidas foram tiradas, as mudanças que queríamos fazer foram feitas de prontidão, a atenção que recebemos do Leonardo na reunião foi ímpar. Antes do casamento tiveram o cuidado de confirmar tudo e de apresentar a equipe. No dia do nosso casamento foi perfeito!
+                    <cite>
+                    Julio Gouveia 
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Sensacional! Tudo maravilhoso. Profissionais altamente qualificados me deixaram super à vontade, participativos, alegres e super educados, sem contar na qualidade das fotos e resultados que obtive com o prazo bem menor do que me passaram, me surpreendi com a profissionalidade desta equipe! Super recomendo!
+                    <cite>
+                        Samantha Vieira
+                    </cite>
+                </blockquote>
+            </div>
+        </div>       
+    </section>
+    <footer>
+        <section id="contact" class="contact">            
+            <div class="row">    
+                <div class="col span-1-of-2">
+                    <nav>
+                        <ul class="footer-nav">
+                            <li>
+                                <a href=""><ion-icon name="location-outline"></ion-icon></a>
+                                <span>Av. Ipiranga, 2403 - Porto Alegre, RS.</span>
+                            </li>
+                            <li>
+                                <a href=""><ion-icon name="call-outline"></ion-icon></a>
+                                <span>(51) 3277.0014</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.714424245626!2d-51.21042018471695!3d-30.045049738265597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978450dbfb409%3A0x6068756445960879!2sAv.%20Ipiranga%2C%202403%20-%20Praia%20de%20Belas%2C%20Porto%20Alegre%20-%20RS%2C%2090160-092!5e0!3m2!1spt-BR!2sbr!4v1657422856476!5m2!1spt-BR!2sbr" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col span-1-of-2">
+                    <nav>
+                        <div class="social-nav">
+                            <p>Pétalas & Cores</p>
+                            <div class="tel-nav-mobile">
+                                <p>(51) 3277.0014</p>
+                                <p>Av. Ipiranga, 2403 - Porto Alegre, RS.</p>
+                            </div>                                        
+                            <ul>
+                                <li>
+                                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                                </li>
+                                <li>
+                                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                                </li>
+                                <li>
+                                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                                </li>
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?phone=5551999999999&text=Envie%20aqui%20sua%20mensagem"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                                </li>    
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>    
+    </footer>
+
+    <!-- Importação da biblioteca de ícones e js -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>
